@@ -1,0 +1,34 @@
+.dice {
+    font-size: 10em;
+    padding: 20px;
+    display: inline-block;    
+}
+
+.shaking {
+    animation-name: 'wobble';
+    animation-duration:1ms;
+}
+
+@keyframes wobble{ 
+  from {
+    transform : rotateX(0) rotateY(0)
+}
+  16.66666%{
+    transform :rotateY(90deg) rotateX(90deg)
+  }
+  33.33333%{
+    transform  : rotateX(0) rotateY(180deg)
+  }
+  50% {
+    transform  : rotateY(0) rotateX(90deg)
+  }
+  66.66666%{
+    transform  : rotateX(0) rotateY(270deg)
+  }
+  83.33333% {
+    transform  : rotateY(0) rotateX(270deg)
+  }
+  100%{
+    transform : rotateX(180deg) rotateY(180deg)
+  }
+}
